@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My personal websites</title>
+    <title>Our personal website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+               
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+        
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="split left">
             <h1>SCARLET LAMAS</h1>
-            <a href="#" class="btn" id="btn-scarlet">Selec this </a>
+            <a href="#" class="btn" id="btn-scarlet">Select this </a>
         </div>
         <div class="split right">
             <h1>ALEJANDRO REAL</h1>
@@ -23,22 +41,36 @@
         <div class="modal-content">
             <span class="close" id="close-scarlet">&times;</span>
             <h2>Scarlet Lamas</h2>
+            
             <div class="info">
                 <p><strong>I study at the university:</strong> Universidad Politécnica del Estado de Nayarit</p>
                 <p><strong>Studies:</strong> Software Development Engineering</p>
                 <p><strong> I'm 21 years old and I was previously studying software engineering at Tec Tepic.</p>
-                    <p>I was born in Tepic, Nayarit, but I traveled to the United States when I was little, and my life has passed between both places.</p>
-                <p><strong>Favorite serie:</strong> Grey's Anatomy</p>
-                <img src="./image/image3.png" alt="Grey's Anatomy" class="profile-img">
-                <a href="https://www.disneyplus.com/es-419/browse/entity-bfd6ba83-5fff-46f8-abae-76f1796c1c8e" target="_blank" class="movie-link">Ver película en disneyplus</a>
-                <p><strong>Favorite movie:</strong> The lion king</p>
-                <img src="./image/image2.webp" alt="The lion king" class="profile-img">
-                <a href="https://www.disneyplus.com/es-419/browse/entity-a3ae7371-39a5-4c0b-a1f2-29a70b372848" target="_blank" class="movie-link">Ver película en disneyplus</a>
-                <p><strong>Favorite food:</strong> pizza</p>
-                <img src="./image/image1.webp" alt="Pizza" class="profile-img">
+                <p>I was born in Tepic, Nayarit, but I traveled to the United States when I was little, and my life has passed between both places.</p>
+               
+                
+                <h2>My favorite things</h2>
+                <h3>Favorite serie:Grey's Anatomy</h3>
+                    <div class="image-container">
+                        <img src="./image/image3.png" alt="Grey's Anatomy" class="profile-img">
+                         <a href="https://www.disneyplus.com/es-419/browse/entity-bfd6ba83-5fff-46f8-abae-76f1796c1c8e" target="_blank" class="movie-link">Ver película en disneyplus</a>
+                    </div>
+               
+                
+                <h3 >Favorite movie: The lion king</h3>
+                    <div class="image-container">
+                        <img src="./image/image2.webp" alt="The lion king" class="profile-img">
+                        <a href="https://www.disneyplus.com/es-419/browse/entity-a3ae7371-39a5-4c0b-a1f2-29a70b372848" target="_blank" class="movie-link">Ver película en disneyplus</a>
+                    </div>
+
+                <h3>Favorite food: Pizza</h3>
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Pizza" class="profile-img">
+                    </div>
+               
                 <section class="music">
-                    <h2>My favorite music</h2>
-                    <p>here you can listen to my favorite music</p>
+                    <h3>My favorite music</h3>
+                    <h3>Here you can listen to my favorite music.</h3>
                     <div class="playlist">
                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3dLAxDk6oKP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
@@ -53,19 +85,32 @@
             <span class="close" id="close-alejandro">&times;</span>
             <h2>ALEJANDRO REAL</h2>
             <div class="info">
-                <p><strong>I study at the university:</strong> Universidad Politécnica del Estado de Nayarit</p>
-                <p><strong>Studies:</strong> Software Development Engineering</p>
-                <p><strong>Favorite series:</strong> Star Wars Episodio 3</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85IYcVNrHvNMz4FHfFLzlT_yl76yO_sr3hg&s" alt="star wars" class="profile-img">
-                <a href="https://www.disneyplus.com/browse/entity-314f14b4-b70a-4ec6-b634-2559f0b1f77e?sharesource=Android" target="_blank" class="movie-link">Ver película en disneyplus</a>
-                <p><strong>Favorite movie</strong> Star Wars</p>
-                <img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/2005/5/w1280/fen971QdTOagZEv4rAU3sjSlpj1.jpg" alt="wars" class="profile-img">
-                <a href="https://www.disneyplus.com/browse/entity-eb1e2c5f-69bf-4240-a61f-7ffc4e0311b3?sharesource=Android" target="_blank" class="movie-link">Ver película en disneyplus</a>
-                <p><strong>favorite food:</strong> Sushi</p>
-                <img src="https://www.gourmet.cl/wp-content/uploads/2021/10/Sushi_Interior_Gourmet.jpg" alt="sushi" class="profile-img">
+                <p> Universidad Politécnica del Estado de Nayarit</p>
+                <p> I'm a young software engineering student who combines his love for technology with a deep appreciation for the small moments in life. Although he is shy by nature, this does not prevent him from connecting with others in an authentic and sincere way.</p>
+                <p><strong> I'm 21 years old.</p>
+                    <h2>My favorite things</h2>
+                <h3>My favorite serie is Steven Universe</h3>
+                    <div class="image-container">
+                        <img src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xMDk5MzA2NS9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY1OTM2NTgxN30.pbjJpeLKssNehw4YgiVEzUwErAa2M-KO4BriieHZ83U/img.jpg?width=980" alt="Steven" class="profile-img">
+                         <a href="https://www.max.com/mx/es" target="_blank" class="movie-link-1">Watch it in HBO MAX</a>
+                    </div>
+               
+                
+                <h3>Interestelar</h3>
+                    <div class="image-container">
+                        <img src="https://th.bing.com/th/id/OIP.Bgdwtqm1qYBe2HBqwiXNPQAAAA?rs=1&pid=ImgDetMain" alt="Hell" class="profile-img">
+                        <a href="https://www.bing.com/aclick?ld=e86VT85OIMEKWleHoMz5xW9jVUCUxT8ixuM0Q1h352wczszzYZWCrz4OkRuL6n54ENASlI7NTjfhow7UeRAbWVcFWNMRmrgNTsOMzUgAswtpqDXkwJpj5ePrPQvNC1NuXjImdw-sAQs3vWgWUlIp6RcV7V5adPCUlWoI2Jr75O-pfnISky1REHMS3JmIFUxECM4ohYLA&u=aHR0cHMlM2ElMmYlMmZ3d3cucHJpbWV2aWRlby5jb20lMmYlM2ZyZWZfJTNkZHZtX3Bkc19hbXpfbXhfZGNfc19iX21rd193bnhJMkk4ei1kYyUyNm1ybnRyayUzZHBjcmlkXzc3NTE1NzQ2MTY4MjU2X3NsaWRfX3BncmlkXzEzNDU4MDIyNTM0Nzk3MjZfcGdlb18yMDExMDZfeF9fYWRleHRfX3B0aWRfa3dkLTg0MTEyNjUwMTc4OTgxJTNhbG9jLTExOQ&rlid=dfaa96de69951d656681f1754c7105f1&ntb=1" target="_blank" class="movie-link-1">Watch it in Prime</a>
+                    </div>
+
+                <h3>My Favorite food is sushi</h3>
+                    <div class="image-container">
+                        <img src="https://static.gamberorosso.it/2022/02/sushi-2-scaled.jpeg" alt="sushi" class="profile-img">
+                        <a href="https://maps.app.goo.gl/Vd4FE19K48bWY8519" target="_blank" class="movie-link-1">The best place to eat it</a>
+                    </div>
+               
                 <section class="music">
-                    <h2>My favorite music</h2>
-                    <p>here you can listen to my favorite music</p>
+                    <h3>My favorite music</h3>
+                    <h3>Here you can listen to my favorite music.</h3>
                     <div class="playlist">
                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4UtSsGT1Sbe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
@@ -73,10 +118,6 @@
             </div>
         </div>
     </div>
-
-    
-    
-
     <script src="script.js"></script>
 </body>
 </html>
